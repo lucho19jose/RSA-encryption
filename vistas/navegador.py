@@ -1,7 +1,6 @@
 import tkinter
 from tkinter import *
 from tkinter import ttk
-from vistas.frame_rsa import *
 from vistas.file import *
 
 

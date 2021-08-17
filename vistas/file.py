@@ -1,7 +1,6 @@
 from os import stat
 from tkinter import *
 from tkinter import ttk
-from conexion_db.consultas_db import *
 from tkinter import filedialog as fd
 from tkinter import messagebox
 from vistas.Algth import generaClaves, cifra, descifra
