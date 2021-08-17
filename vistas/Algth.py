@@ -119,7 +119,3 @@ def convertTuplein(tup):
 def convertTupleout(tup):
     intTup = int(tup)
     return intTup
-
-
-##### ESTA PARTE ES SOLO UN EJEMPLO DE COMO FUNCIONA EL ALGORITMO  ###########
-""" claves = generaClaves(2048) """

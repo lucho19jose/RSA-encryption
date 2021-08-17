@@ -87,7 +87,9 @@ class MainFile(ttk.Frame):
             self.button_OpenFileEncrypt.config(state="normal")
             self.button_OpenFilePK.config(state="normal")
 
+            self.entry_EncryptedFile.delete(0, END)
             self.entry_EncryptedFile.config(state="readonly")
+            self.entry_PrivateKey.delete(0, END)
             self.entry_PrivateKey.config(state="readonly")
             self.button_OpenFilePrk.config(state="disabled")
             self.button_OpenFileDecrypt.config(state="disabled")
@@ -95,6 +97,8 @@ class MainFile(ttk.Frame):
             print(self.v.get())
 
         def decryptAvailable():
+            self.entry_fileToEncrypt.delete(0, END)
+            self.entry_publicKey.delete(0, END)
             self.entry_fileToEncrypt.config(state="readonly")
             self.entry_publicKey.config(state="readonly")
             self.button_OpenFileEncrypt.config(state="disabled")

@@ -12,7 +12,7 @@ class Aplication(ttk.Frame):
         self.ventana = ventana
 
         self.ventana.title("RSA System")
-        self.ventana.iconbitmap("img/corona.ico")
+        self.ventana.iconbitmap("img/key.ico")
 
         # Contenedor de Paneles
 
@@ -22,17 +22,14 @@ class Aplication(ttk.Frame):
         # Panel de Inicio
         self.inicio = Label(
             self.navegador, text="Welcome/Bienvenido a RSA sys")
-        self.author = Label(self.navegador, text="by: jose")
+        self.author = Label(
+            self.navegador, text="By: jose, Course: Seguridad Informatica, EPIS")
         self.navegador.add(self.inicio, text="Inicio")
-        self.navegador.add(self.author, text="Inicio")
-
-        # panel de estudiante
-        self.RSA = RSAview(self.navegador)
-        self.navegador.add(self.RSA, text="what")
 
         # mainFile
         self.main = MainFile(self.navegador)
-        self.navegador.add(self.main, text="RSA")
+        self.navegador.add(self.main, text="RSA Algorithm")
 
+        self.navegador.add(self.author, text="about")
         self.navegador.pack()
         self.pack()
